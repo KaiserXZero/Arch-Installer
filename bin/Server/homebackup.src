@@ -1,0 +1,5 @@
+for count in ${!Folder[*]}
+do
+echo '############## Folder '${Folder[$count]}' ###############'
+rsync -avrz --delete --log-file=$volume/LOGS/rsyn_log_${count} /home/${USERNAME}/"${Folder[$count]}"/ $volume/"${Folder[$count]}"/
+done

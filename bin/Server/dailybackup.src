@@ -1,0 +1,8 @@
+for (( index=${daybackup}; index>1; index=index-1 ))
+do
+(( tot = index - 1 ))
+echo '########### DAY '$tot' to DAY '$index' ###############'
+rsync -avrz --delete --log-file=$volume/LOGS/rsyn_log_Day_${index} $volume/Day_${tot}/ $volume/Day_${index}/
+done
+echo '########### DAY '$tot' to DAY '$index' ###############'
+rsync -avrz --delete --log-file=$volume/LOGS/rsyn_log_Day_${index} /home/${USERNAME}/Documents/Sync/ $volume/Day_1/

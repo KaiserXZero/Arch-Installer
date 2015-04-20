@@ -1,0 +1,8 @@
+for (( index=${monthbackup}; index>1; index=index-1 ))
+do
+(( tot = index - 1 ))
+echo '############## MONTH '$index' TO MONTH '$tot' ################'
+rsync -avrz --delete --log-file=$volume/LOGS/rsyn_log_Month_${index} $volume/Month_${tot}/ $volume/Month_${index}/
+done
+echo '############## MONTH '$index' TO MONTH '$tot' ################'
+rsync -avrz --delete --log-file=$volume/LOGS/rsyn_log_Month_${index} $volume/Day_${daybackup}/ $volume/Month_1/

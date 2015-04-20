@@ -1,0 +1,13 @@
+#used between all machines
+general="htop openssh net-tools stunnel wget fish"
+
+#used between Desktop and Laptop
+common="firefox gnome-tweak-tool chromium flashplugin geary libreoffice vlc terminator gimp skype openshot gparted handbrake keepass remmina freerdp steam encfs"
+
+server="arch-install-scripts tmux archey3"
+
+aur="numix-circle-icon-theme-git atom-editor-bin makemkv teamviewer espeak-gui btsync-gui minecraft"
+
+server_containers="firefox ttf-dejavu virtualbox qt4 xfce4 xfce4-goodies tigervnc php-mcrypt apache lua lynx php php-apache mariadb docker phpvirtualbox phpmyadmin"
+
+retired_aur="bluegriffon"

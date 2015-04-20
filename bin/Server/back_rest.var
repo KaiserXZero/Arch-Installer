@@ -1,0 +1,23 @@
+#######	Process [1] Variables ################
+
+drive="/dev/sdb1" #Name of the backup drive
+
+volume="/mnt/backup" #Name of the backup folder
+
+#######	Process [2] Variables #################
+
+USERNAME="stephenbecht" #Name of my home dictionary
+
+daybackup=10 #Number of Daily backup folders for process
+
+#######	Process [3] Variables #################
+
+DOM=$(date -d "$D" '+%d') #What day is it today
+
+backupday=19 #[Note: must be in the formate '00'] Day of the month used for declaring what day for monthly backups
+
+declare -a Folder=('Desktop' 'Documents/Archive' 'Documents/Devices' 'Documents/Imiges' 'Documents/VirtualBox/Shared' 'Music' 'Pictures' 'Videos') #All the Folders to be backup
+
+monthbackup=3 #Number of backuped months
+
+RestAll='yes'

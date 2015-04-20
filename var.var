@@ -1,0 +1,8 @@
+user='stephenbecht'
+PORT='9376'
+ssh_ip='192.168.1.100'
+stunnel='192.168.1.150'
+http_ip='192.168.1.200'
+gateway='192.168.1.1'
+dns='8.8.8.8'
+networkdev=eno1
