@@ -1,6 +1,6 @@
 #!/bin/bash
 
-user=stephenbecht
+source var.var
 
 source packages.var
 gen_build ()
